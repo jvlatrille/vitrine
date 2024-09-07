@@ -1,0 +1,221 @@
+/* ---------------------------------- */
+/*            EN-TÊTE PRINCIPAL       */
+/* ---------------------------------- */
+
+/* Styles de l'en-tête principal */
+.main-header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* ou spécifiez une hauteur fixe si nécessaire */
+    background-color: #000;
+    /* ou tout autre couleur de fond appropriée */
+}
+
+.header-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.header-content img {
+    width: 100%;
+    /* Assure que l'image couvre tout l'en-tête */
+    height: auto;
+    /* Maintient les proportions de l'image */
+    opacity: 0.9;
+    /* Rend l'image plus transparente pour que le texte soit lisible */
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    color: white;
+    /* Couleur du texte */
+}
+
+.header-text p {
+    font-size: 1rem;
+    color: white;
+    /* Couleur du texte */
+}
+
+
+
+/* ---------------------------------- */
+/*         A PROPOS DE MOI            */
+/* ---------------------------------- */
+
+/* Styles pour la section À propos de moi */
+.about-section {
+    background-color: white;
+    /* Ou toute autre couleur de fond appropriée */
+    padding: 20px 0;
+    /* Ajout de padding pour la section */
+}
+
+.container {
+    max-width: 1200px;
+    /* Ou la largeur maximale de votre choix */
+    margin: 0 auto;
+    /* Centre le conteneur */
+    display: flex;
+    justify-content: space-around;
+    /* Espacement équitable entre les blocs */
+    flex-wrap: wrap;
+    /* Permet aux éléments de passer à la ligne sur petits écrans */
+}
+
+.info-block {
+    flex-basis: 30%;
+    /* Chaque bloc prend environ 30% de l'espace */
+    margin-bottom: 20px;
+    /* Espace entre les blocs */
+    padding: 15px;
+    border: 1px solid #000000;
+    /* Bordure noire subtile */
+    display: flex;
+    flex-direction: column;
+    /* Organise les enfants verticalement */
+    align-items: center;
+    /* Centre les enfants horizontalement */
+    text-align: center;
+    /* Centrage du texte */
+}
+
+/* Styles pour les images remplaçant les icônes */
+.icon-image {
+    width: 80px;
+    /* Définit une largeur fixe pour toutes les images */
+    height: auto;
+    /* Maintient le ratio d'aspect */
+    margin-bottom: 15px;
+    /* Espace sous l'image */
+}
+
+.info-block h2 {
+    font-size: 1.5rem;
+    /* Taille pour les titres des blocs */
+    margin-top: 10px;
+    /* Espace au-dessus du titre si nécessaire */
+}
+
+.info-block p {
+    font-size: 1rem;
+    /* Taille de police pour le paragraphe */
+    line-height: 1.6;
+    /* Espacement des lignes pour une meilleure lisibilité */
+}
+
+
+/* ---------------------------------- */
+/*             MORPION SECTION        */
+/* ---------------------------------- */
+
+/* Styles généraux de la section */
+.section {
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.break-small {
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 20px auto;
+}
+
+/* Bloc image */
+.image-block {
+    cursor: pointer;
+}
+
+.image-block img {
+    width: 100%;
+    height: auto;
+}
+
+/* Bloc de code */
+.code-block {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+}
+
+.code-block h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.code-snippet {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #333;
+    resize: none;
+}
+
+/* Styles pour la fenêtre flottante */
+.floating-window {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    width: 400px;
+    background-color: #fff;
+    border: 2px solid #333;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    resize: both;
+    overflow: auto;
+}
+
+.floating-header {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: move;
+}
+
+.floating-header h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.floating-header .close {
+    float: right;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.floating-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.floating-content img {
+    max-width: 100%;
+    height: auto;
+}
