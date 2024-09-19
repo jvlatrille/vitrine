@@ -1,0 +1,53 @@
+/* ---------------------------------- */
+/*            EN-TÊTE PRINCIPAL       */
+/* ---------------------------------- */
+
+/* Styles de l'en-tête principal */
+.main-header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+}
+
+.header-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.header-content img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.5) 100%);
+    padding: 20px;
+    border-radius: 50px; /* Bords arrondis */
+    max-width: 80%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Ombre douce */
+}
+
+.header-text h1 {
+    font-size: 3.5rem; /* Taille du titre augmentée */
+    color: #FF0000; /* Titre en rouge */
+    margin-bottom: 20px;
+}
+
+.header-text p {
+    font-size: 1.2rem;
+    color: white; /* Texte en blanc */
+    line-height: 1.6;
+}

@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jules VINET LATRILLE</title>
-    <link rel="stylesheet" href="style.css">
-
-
-    <link rel="stylesheet" href="responsee.css">
-    <link rel="stylesheet" href="template-style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="css/template-style.css">
+    <link rel="icon" href="img/logo_noir.png" type="image/png">
 
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 </head>
@@ -23,7 +23,7 @@
             <div class="s-12 l-2">
                 <a href="index.html" class="site-logo" id="LogoSoulEater" aria-label="Homepage">
                     <!-- Logo Version Blanche -->
-                    <img class="logo-white" src="img/logo_noir.png" alt="Soul Eater Logo White Version" sizes="10x10" >
+                    <img class="logo-white" src="img/logo_noir.png" alt="Soul Eater Logo White Version" sizes="10x10">
                     <!-- Logo Version Noire -->
                     <img class="logo-dark" src="img/logo_blanc.png" alt="Soul Eater Logo Dark Version">
                 </a>
@@ -32,11 +32,11 @@
             <!-- Texte barre de navigation -->
             <div class="top-nav s-12 l-10">
                 <ul class="right chevron">
-                    <li><a href="developper.html">Partie 1</a></li>
-                    <li><a href="optimiser.html">Parie 2</a></li>
-                    <li><a href="administrer.html">Parie 3</a></li>
-                    <li><a href="gerer.html">Parie 4</a></li>
-                    <li><a href="collaborer.html">Parie 5</a></li>
+                    <li><a href="#Accueil">Accueil</a></li>
+                    <li><a href="#Profil">Profil</a></li>
+                    <li><a href="#Competences">Compétences</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="collaborer.html">Me contacter</a></li>
                 </ul>
             </div>
         </nav>
@@ -46,9 +46,9 @@
     <!-- MAIN -->
     <main role="main">
         <!-- Main Header -->
-        <header class="main-header">
+        <header class="main-header" id="Accueil">
             <div class="header-content text-center">
-                <img src="img/header.jpg" alt="Description de l'image de l'en-tête" loading="lazy">
+                <img src="img/header.jpg" alt="Description de l'image de l'en-tête">
                 <div class="header-text">
                     <h1>Jules VINET LATRILLE</h1>
                     <p>
@@ -64,25 +64,31 @@
         </header>
 
         <!-- Section À propos de moi -->
-        <section class="about-section text-center">
+        <section class="about-section text-center" id="Profil">
+            <div class="présentation de moi">
+                <section class="skills-section" id="Competences">
+                    <h2 class="section-title">Présentation de moi</h2>
+                    <hr class="section-divider">
+                    <p> Jsp quoi écrire mais c'est pour une présentation de moi</p>
+            </div>
             <div class="container">
                 <!-- Bloc Parcours scolaire -->
                 <div class="info-block">
-                    <img src="img\scolaire.png" alt="Parcours scolaire" class="icon-image" loading="lazy">
+                    <img src="img\scolaire.png" alt="Parcours scolaire" class="icon-image">
                     <h2>Parcours scolaire</h2>
                     <p>Collége : Errobi, Cambo les Bains<br>Lycée : Cassin, Bayonne<br>BUT : Informatique, Anglet</p>
                 </div>
 
                 <!-- Bloc Mes ambitions -->
                 <div class="info-block">
-                    <img src="img\ambitions.png" alt="Mes ambitions" class="icon-image" loading="lazy">
+                    <img src="img\ambitions.png" alt="Mes ambitions" class="icon-image">
                     <h2>Mes ambitions</h2>
                     <p>Gagner un maximum d'argent</p>
                 </div>
 
                 <!-- Bloc Adjectifs pour me qualifier -->
                 <div class="info-block">
-                    <img src="img\adjectifs.png" alt="Adjectifs pour me qualifier" class="icon-image" loading="lazy">
+                    <img src="img\adjectifs.png" alt="Adjectifs pour me qualifier" class="icon-image">
                     <h2>Adjectifs pour me qualifier</h2>
                     <p>Calme, sérieux, attentif, à l'écoute, efficace</p>
                 </div>
@@ -90,17 +96,60 @@
         </section>
 
 
+        <!-- Section Compétences -->
+        <section class="skills-section" id="Competences">
+            <h2 class="section-title">Mes compétences</h2>
+            <hr class="section-divider">
+            <div class="skills-content">
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <span>HTML/CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>C++</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>SQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cv-download">
+                    <img src="doc/CV.png" alt="CV de Jules VINET LATRILLE" class="cv-image">
+                    <a href="doc/CV.pdf" class="download-button" download>Télécharger mon CV</a>
+                </div>
+            </div>
+        </section>
 
         <!-- Section Projets -->
-        <section class="projects-section">
-            <h2 class="section-title">Mes projets</h2>
+        <section class="projects-section" id="Portfolio">
+            <h2 class="section-title">Mon portfolio</h2>
             <hr class="section-divider">
 
             <div class="projects-gallery">
                 <!-- Projet 1 -->
                 <div class="project-item">
                     <a href="projet_elona.html" class="project-link">
-                        <img src="img/portfolio/Elona_pfp_thumb.png" alt="Elona project" class="project-image" loading="lazy">
+                        <img src="img/portfolio/Elona_pfp_thumb.png" alt="Elona project" class="project-image">
                         <div class="project-image-overlay">
                             <h3>Elona</h3>
                             <p>Elona est une application Web écrite en python dédiées à discord utilisable par tout
@@ -110,7 +159,7 @@
                 </div>
                 <div class="project-item">
                     <a href="projet_lecteur_de_diapo.html" class="project-link">
-                        <img src="img/portfolio/livre_photo_thumb.jpg" alt="Lecteur de diaporama" class="project-image" loading="lazy">
+                        <img src="img/portfolio/livre_photo_thumb.jpg" alt="Lecteur de diaporama" class="project-image">
                         <div class="project-image-overlay">
                             <h3>Lecteur de diaporama</h3>
                             <p>J'ai créé un lecteur de diaporama en C++.</p>
@@ -120,7 +169,7 @@
 
                 <div class="project-item">
                     <a href="projet_navigateur_bayonne.html" class="project-link">
-                        <img src="img/portfolio/bayonne_map_thumb.png" alt="Map Bayonne" class="project-image" loading="lazy">
+                        <img src="img/portfolio/bayonne_map_thumb.png" alt="Map Bayonne" class="project-image">
                         <div class="project-image-overlay">
                             <h3>Navigateur dans Bayonne</h3>
                             <p>En groupe, nous avons réalisé un calculateur d'itinéraire le plus court
@@ -130,17 +179,17 @@
                 </div>
                 <div class="project-item">
                     <a href="projet_after_effect.html" class="project-link">
-                        <img src="img/portfolio/After_effect_thumb.png" alt="Logo AE" class="project-image" loading="lazy">
+                        <img src="img/portfolio/After_effect_thumb.png" alt="Logo AE" class="project-image">
                         <div class="project-image-overlay">
-                            <h3>Montage vidéo</h3>
-                            <p>Je suis passionné par le montage vidéo.</p>
+                            <h3>Adobe</h3>
+                            <p>Je sais utiliser des logiciels Adobe tels que : After Effect, Photoshop, Premier Pro</p>
                         </div>
                     </a>
                 </div>
 
                 <div class="project-item">
                     <a href="lienverslapage" class="project-link">
-                        <img src="img/portfolio/jsp_thumb.jpg" alt="Jsp" class="project-image" loading="lazy">
+                        <img src="img/portfolio/jsp_thumb.jpg" alt="Jsp" class="project-image">
                         <div class="project-image-overlay">
                             <h3>Lorem Ipsum Dolor</h3>
                             <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
@@ -152,7 +201,7 @@
                 </div>
                 <div class="project-item">
                     <a href="lienverslapage" class="project-link">
-                        <img src="img/portfolio/jsp_thumb.jpg" alt="Jsp" class="project-image" loading="lazy">
+                        <img src="img/portfolio/jsp_thumb.jpg" alt="Jsp" class="project-image">
                         <div class="project-image-overlay">
                             <h3>Lorem Ipsum Dolor</h3>
                             <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
@@ -164,7 +213,7 @@
                 </div>
                 <div class="project-item">
                     <a href="lienverslapage" class="project-link">
-                        <img src="img/portfolio/jsp_thumb.jpg" alt="Jsp" class="project-image" loading="lazy">
+                        <img src="img/portfolio/jsp_thumb.jpg" alt="Jsp" class="project-image">
                         <div class="project-image-overlay">
                             <h3>Lorem Ipsum Dolor</h3>
                             <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
@@ -176,7 +225,7 @@
                 </div>
                 <div class="project-item">
                     <a href="lienverslapage" class="project-link">
-                        <img src="img/portfolio/jsp_thumb.jpg" alt="Jsp" class="project-image" loading="lazy">
+                        <img src="img/portfolio/jsp_thumb.jpg" alt="Jsp" class="project-image">
                         <div class="project-image-overlay">
                             <h3>Lorem Ipsum Dolor</h3>
                             <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
@@ -203,9 +252,9 @@
             <!-- Logos des réseaux sociaux -->
             <div class="footer-social">
                 <a href="https://github.com/jvlatrille" target="_blank" aria-label="GitHub">
-                    <img src="img/github_logo.png" alt="GitHub" loading="lazy">
+                    <img src="img/github_logo.png" alt="GitHub">
                 </a>
-                <a href="https://www.linkedin.com/in/julesvinetlatrille/" target="_blank" aria-label="LinkedIn" loading="lazy">
+                <a href="https://www.linkedin.com/in/julesvinetlatrille/" target="_blank" aria-label="LinkedIn">
                     <img src="img/linkedin_logo.png" alt="LinkedIn">
                 </a>
             </div>

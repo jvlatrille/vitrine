@@ -1,0 +1,282 @@
+/* ---------------------------------- */
+/*        BARRE DE NAVIGATION         */
+/* ---------------------------------- */
+
+/* Styles pour les logos */
+#LogoSoulEater img {
+    max-width: 120px;
+    /* Limite la largeur maximale */
+    height: auto;
+    /* Garde les proportions de l'image */
+}
+
+/* Alignement et padding du logo */
+nav .site-logo {
+    display: flex;
+    align-items: center;
+    /* Aligne le logo verticalement au centre */
+    padding: 5px;
+    /* Ajuste l'espace autour du logo si nécessaire */
+}
+
+/* Styles généraux pour la navigation */
+nav {
+    border-bottom: 1px solid #e5e5e5;
+    /* Ligne subtile sous la barre de navigation */
+    padding: 1rem 0;
+    /* Espacement autour des éléments de navigation */
+    background: transparent;
+    /* Pour un fond transparent */
+}
+
+/* Styles pour les liens de la navigation */
+nav ul {
+    list-style: none;
+    /* Enlève les puces */
+    display: flex;
+    /* Affichage flex pour aligner horizontalement les liens */
+    justify-content: space-between;
+    /* Espacement équitable entre les liens */
+    padding: 0;
+    /* Aucun padding par défaut */
+    margin: 0;
+    /* Aucune marge par défaut */
+}
+
+/* Styles pour chaque élément de liste dans la navigation */
+nav ul li {
+    padding: 10px 20px;
+    /* Espacement autour de chaque lien */
+}
+
+/* Styles pour les liens */
+nav ul li a {
+    text-decoration: none;
+    /* Enlève le soulignement des liens */
+    color: #333;
+    /* Couleur des liens */
+    font-weight: bold;
+    /* Texte en gras pour une meilleure lisibilité */
+    transition: color 0.3s ease;
+    /* Transition douce pour les changements de couleur */
+}
+
+/* Effet de survol sur les liens */
+nav ul li a:hover {
+    color: #0056b3;
+    /* Change la couleur lors du survol */
+}
+
+/* Règles spécifiques aux petits écrans */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        /* Pile les liens verticalement sur les petits écrans */
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+        /* Réduit l'espace entre les liens dans la navigation sur mobile */
+    }
+
+    nav .site-logo {
+        justify-content: center;
+        /* Centre le logo sur les petits écrans */
+    }
+}
+
+/* Réinitialisation des marges pour le header */
+header.position-absolute {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Responsive alignement du logo et des éléments de navigation */
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Styles de transition pour le fond de la barre de navigation lors du défilement */
+nav.background-transparent-hightlight {
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.3s ease;
+}
+
+nav.background-transparent {
+    background-color: transparent;
+}
+
+/* Style spécifique pour les logos */
+.logo-white {
+    display: none;
+}
+
+.logo-dark {
+    display: block;
+}
+
+/* Lorsque le fond de la navigation change, les logos changent également */
+.sticky .logo-white {
+    display: block;
+}
+
+.sticky .logo-dark {
+    display: none;
+}
+
+
+/* ---------------------------------- */
+/*              PROJETS               */
+/* ---------------------------------- */
+
+.projects-section {
+    padding: 40px 0;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.section-divider {
+    margin-bottom: 40px;
+}
+
+.projects-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-item {
+    width: calc(25% - 20px);
+    /* Ajustement de la largeur en déduisant la marge */
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-link {
+    display: block;
+    text-decoration: none;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.project-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+    /* Applique la couleur blanche à tout le texte à l'intérieur de l'overlay */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.project-image-overlay h2,
+.project-image-overlay h3,
+.project-image-overlay p {
+    color: white;
+    /* Assure que les titres sont blancs */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    /* Ombre pour améliorer la lisibilité */
+}
+
+.project-item:hover .project-image {
+    transform: scale(1.1);
+    /* Mise à l'échelle de l'image lors du survol */
+}
+
+.project-item:hover .project-image-overlay {
+    opacity: 1;
+    /* L'overlay devient visible, mais sa taille reste inchangée */
+}
+
+
+/* ---------------------------------- */
+/*               FOOTER               */
+/* ---------------------------------- */
+
+.footer-custom {
+    background-color: #333;
+    padding: 20px 0;
+    color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.footer-info {
+    text-align: left;
+    font-size: 0.875rem;
+    color: #ccc;
+}
+
+.footer-info p {
+    margin: 0;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.footer-social img:hover {
+    filter: none;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
