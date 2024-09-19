@@ -294,6 +294,7 @@ a.tooltip-content.tooltip-bottom,.tooltip-content.tooltip-bottom {
   padding: 20px;  
   z-index: 1000;
 }
+
 body.modal-active {
   overflow: hidden !important;
 }

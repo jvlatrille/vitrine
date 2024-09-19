@@ -4,6 +4,24 @@
 body {
   background: #fff;
 }
+
+/* Import the Kids-Regular font */
+@font-face {
+  font-family: 'Kids-Regular';
+  src: url('../font/KIdDOS-Regular.ttf') format('truetype');
+}
+
+/* Apply the Kids-Regular font to all elements */
+body, p, a, h1, h2, h3, h4, h5, h6, blockquote, table, ul, ol, iframe, .text-drop-cap, .button, .section, aside, nav, .top-nav, .aside-nav, .text-more-info, .top-bar, .top-bar-social, i, .owl-carousel, .tab-nav, form, .required, .text-padding, .text-padding-small {
+  font-family: 'Kids-Regular', sans-serif;
+}
+
+/* Custom Template Styles */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Kids-Regular', sans-serif;
+}
+
+
 p {
   color: #777;
   font-size: 0.85rem;
@@ -115,7 +133,7 @@ blockquote::before {
   content: "“";
   display: block;
   float: left;
-  font-family: georgia;
+  font-family: 'Kids-Regular', sans-serif;
   font-size: 80px;
   height: 30px;
   left: -40px;
@@ -650,6 +668,7 @@ aside.aside-left {
   padding-top: 2.5rem;
 }
 .float-left {
+  display: block;
   float: left;
 }
 .block-bordered {
@@ -978,7 +997,7 @@ a.text-more-info {
 }
 a.text-more-info:after {
   content: "\f006";
-  font-family: mfg;
+  font-family: 'Kids-Regular', sans-serif;
   font-size: 0.8rem;
   margin-left: 0.625rem;
   transition: all 0.20s linear 0s;
@@ -1081,7 +1100,7 @@ i.icon-circle-small {
   color: #7697a2!important;
   border: 1px solid #7697a2;
   border-radius: 0;
-  font-family: sli;
+  font-family: 'Kids-Regular', sans-serif;
   height: 40px;
   line-height: 40px;
   margin-top: -20px;
@@ -1886,7 +1905,7 @@ p.form-success {
 /* Custom Template Styles */
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Playfair Display";
+  font-family: 'Kids-Regular', sans-serif;
 }
 
 blockquote {
@@ -1990,7 +2009,7 @@ nav.background-transparent-hightlight.fixed .top-nav .active-item > a, nav.backg
 .owl-carousel .owl-nav div {
   border: 0 none;
   color: #C9C9C9 !important;
-  font-family: sli;
+  font-family: 'Kids-Regular', sans-serif;
   font-size: 30px;
   height: auto;
   line-height: 0;

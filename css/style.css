@@ -39,12 +39,12 @@
 
 .header-text h1 {
     font-size: 2.5rem;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .header-text p {
     font-size: 1rem;
-    color: white;
+    color: rgb(0, 0, 0);
     /* Couleur du texte */
 }
 
@@ -112,9 +112,13 @@
 }
 
 .cv-image {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
 }
 
 .download-button {
@@ -197,103 +201,58 @@
 }
 
 
-/* ---------------------------------- */
-/*             MORPION SECTION        */
-/* ---------------------------------- */
 
-/* Styles généraux de la section */
-.section {
+/* ---------------------------------- */
+/*            ME CONTACTER            */
+/* ---------------------------------- */
+.contact-section {
     padding: 40px 0;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
 }
 
-.section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.break-small {
-    width: 50px;
-    height: 3px;
-    background-color: #007bff;
-    margin: 20px auto;
-}
-
-/* Bloc image */
-.image-block {
-    cursor: pointer;
-}
-
-.image-block img {
-    width: 100%;
-    height: auto;
-}
-
-/* Bloc de code */
-.code-block {
-    background-color: #f4f4f4;
-    border-radius: 8px;
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-    text-align: left;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Ombre plus accentuée */
 }
 
-.code-block h2 {
-    font-size: 1.8rem;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
     margin-bottom: 20px;
 }
 
-.code-snippet {
-    width: 100%;
-    border: 1px solid #ccc;
-    padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
+.form-group label {
     font-size: 1rem;
-    color: #333;
-    resize: none;
+    margin-bottom: 5px;
+    display: block;
 }
 
-/* Styles pour la fenêtre flottante */
-.floating-window {
-    display: none;
-    position: fixed;
-    top: 100px;
-    left: 100px;
-    width: 400px;
-    background-color: #fff;
-    border: 2px solid #333;
-    z-index: 1000;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    resize: both;
-    overflow: auto;
-}
-
-.floating-header {
+.form-group input,
+.form-group textarea {
+    width: 100%;
     padding: 10px;
-    background-color: #333;
-    color: #fff;
-    cursor: move;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
-.floating-header h2 {
-    margin: 0;
-    font-size: 16px;
-}
-
-.floating-header .close {
-    float: right;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
+.submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.floating-content {
-    padding: 15px;
-    text-align: center;
-}
-
-.floating-content img {
-    max-width: 100%;
-    height: auto;
+.submit-button:hover {
+    background-color: #0056b3;
 }

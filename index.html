@@ -16,7 +16,7 @@
 
 <body class="size-1140">
     <!-- HEADER -->
-    <header role="banner" class="position-absolute">
+    <header role="banner" class="position-absolute" style="background-image: url('img/background.jpg'); background-size: cover; background-position: center;">
         <!-- Logo barre de navigation -->
         <nav class="background-transparent background-transparent-hightlight full-width sticky"
             aria-label="Main Navigation">
@@ -34,9 +34,9 @@
                 <ul class="right chevron">
                     <li><a href="#Accueil">Accueil</a></li>
                     <li><a href="#Profil">Profil</a></li>
-                    <li><a href="#Competences">Compétences</a></li>
+                    <li><a href="#Competences">Competences</a></li>
                     <li><a href="#Portfolio">Portfolio</a></li>
-                    <li><a href="collaborer.html">Me contacter</a></li>
+                    <li><a href="#MeContacter">Me contacter</a></li>
                 </ul>
             </div>
         </nav>
@@ -52,31 +52,31 @@
                 <div class="header-text">
                     <h1>Jules VINET LATRILLE</h1>
                     <p>
-                        <b>Étudiant en première année de BUT Informatique à Anglet</b><br><br>
+                        <b>etudiant en premiere annee de BUT Informatique a Anglet</b><br><br>
                         Voici mon portfolio.
-                        Dans celui-ci, vous trouverez une documentation de mon développement de compétences tout au long
+                        Dans celui-ci, vous trouverez une documentation de mon developpement de competences tout au long
                         de
-                        mon parcours en B.U.T. Il sert à consigner mes progrès et à présenter mes niveaux de compétences
+                        mon parcours en B.U.T. Il sert a consigner mes progres et a presenter mes niveaux de competences
                         .
                     </p>
                 </div>
             </div>
         </header>
 
-        <!-- Section À propos de moi -->
+        <!-- Section a propos de moi -->
         <section class="about-section text-center" id="Profil">
-            <div class="présentation de moi">
+            <div class="presentation de moi">
                 <section class="skills-section" id="Competences">
-                    <h2 class="section-title">Présentation de moi</h2>
+                    <h2 class="section-title">Presentation de moi</h2>
                     <hr class="section-divider">
-                    <p> Jsp quoi écrire mais c'est pour une présentation de moi</p>
+                    <p> Jsp quoi ecrire mais c'est pour une presentation de moi</p>
             </div>
             <div class="container">
                 <!-- Bloc Parcours scolaire -->
                 <div class="info-block">
                     <img src="img\scolaire.png" alt="Parcours scolaire" class="icon-image">
                     <h2>Parcours scolaire</h2>
-                    <p>Collége : Errobi, Cambo les Bains<br>Lycée : Cassin, Bayonne<br>BUT : Informatique, Anglet</p>
+                    <p>College : Errobi, Cambo les Bains<br>Lycee : Cassin, Bayonne<br>BUT : Informatique, Anglet</p>
                 </div>
 
                 <!-- Bloc Mes ambitions -->
@@ -90,15 +90,15 @@
                 <div class="info-block">
                     <img src="img\adjectifs.png" alt="Adjectifs pour me qualifier" class="icon-image">
                     <h2>Adjectifs pour me qualifier</h2>
-                    <p>Calme, sérieux, attentif, à l'écoute, efficace</p>
+                    <p>Calme, serieux, attentif, a l'ecoute, efficace</p>
                 </div>
             </div>
         </section>
 
 
-        <!-- Section Compétences -->
+        <!-- Section Competences -->
         <section class="skills-section" id="Competences">
-            <h2 class="section-title">Mes compétences</h2>
+            <h2 class="section-title">Mes competences</h2>
             <hr class="section-divider">
             <div class="skills-content">
                 <div class="skills-list">
@@ -135,7 +135,7 @@
                 </div>
                 <div class="cv-download">
                     <img src="doc/CV.png" alt="CV de Jules VINET LATRILLE" class="cv-image">
-                    <a href="doc/CV.pdf" class="download-button" download>Télécharger mon CV</a>
+                    <a href="doc/CV.pdf" class="download-button" download>Telecharger mon CV</a>
                 </div>
             </div>
         </section>
@@ -152,7 +152,7 @@
                         <img src="img/portfolio/Elona_pfp_thumb.png" alt="Elona project" class="project-image">
                         <div class="project-image-overlay">
                             <h3>Elona</h3>
-                            <p>Elona est une application Web écrite en python dédiées à discord utilisable par tout
+                            <p>Elona est une application Web ecrite en python dediees a discord utilisable par tout
                                 utilisateur.</p>
                         </div>
                     </a>
@@ -162,7 +162,7 @@
                         <img src="img/portfolio/livre_photo_thumb.jpg" alt="Lecteur de diaporama" class="project-image">
                         <div class="project-image-overlay">
                             <h3>Lecteur de diaporama</h3>
-                            <p>J'ai créé un lecteur de diaporama en C++.</p>
+                            <p>J'ai cree un lecteur de diaporama en C++.</p>
                         </div>
                     </a>
                 </div>
@@ -172,8 +172,8 @@
                         <img src="img/portfolio/bayonne_map_thumb.png" alt="Map Bayonne" class="project-image">
                         <div class="project-image-overlay">
                             <h3>Navigateur dans Bayonne</h3>
-                            <p>En groupe, nous avons réalisé un calculateur d'itinéraire le plus court
-                                intéractif en python dans les rues de bayonne.</p>
+                            <p>En groupe, nous avons realise un calculateur d'itineraire le plus court
+                                interactif en python dans les rues de bayonne.</p>
                         </div>
                     </a>
                 </div>
@@ -241,15 +241,61 @@
         </section>
     </main>
 
+    <!-- Section Me Contacter -->
+    <section class="contact-section" id="MeContacter">
+        <h2 class="section-title">Me Contacter</h2>
+        <hr class="section-divider">
+        <div class="contact-content">
+            <form id="contactForm" class="contact-form"></form>
+                <div class="form-group">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Envoyer</button>
+            </form>
+            <div id="formResponse" class="form-response"></div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const formResponse = document.getElementById('formResponse');
+
+            if (name && email && message) {
+                formResponse.innerHTML = '<p>Merci pour votre message, ' + name + '! Nous vous contacterons bientôt.</p>';
+                formResponse.style.color = 'green';
+                document.getElementById('contactForm').reset();
+            } else {
+                formResponse.innerHTML = '<p>Veuillez remplir tous les champs.</p>';
+                formResponse.style.color = 'red';
+            }
+        });
+    </script>
+
+
     <!-- FOOTER -->
     <footer class="footer-custom">
         <section class="footer-content">
             <!-- Informations de copyright -->
             <div class="footer-info">
-                <p>&copy; 2024 Jules VINET LATRILLE. Tous droits réservés.</p>
+                <p>&copy; 2024 Jules VINET LATRILLE. Tous droits reserves.</p>
             </div>
 
-            <!-- Logos des réseaux sociaux -->
+            <!-- Logos des reseaux sociaux -->
             <div class="footer-social">
                 <a href="https://github.com/jvlatrille" target="_blank" aria-label="GitHub">
                     <img src="img/github_logo.png" alt="GitHub">
