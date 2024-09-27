@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jules VINET LATRILLE</title>
-    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsee.css">
     <link rel="stylesheet" href="css/template-style.css">
@@ -16,7 +15,8 @@
 
 <body class="size-1140">
     <!-- HEADER -->
-    <header role="banner" class="position-absolute" style="background-image: url('img/background.jpg'); background-size: cover; background-position: center;">
+    <header role="banner" class="position-absolute"
+        style="background-image: url('img/background.jpg'); background-size: cover; background-position: center;">
         <!-- Logo barre de navigation -->
         <nav class="background-transparent background-transparent-hightlight full-width sticky"
             aria-label="Main Navigation">
@@ -48,7 +48,7 @@
         <!-- Main Header -->
         <header class="main-header" id="Accueil">
             <div class="header-content text-center">
-                <img src="img/header.jpg" alt="Description de l'image de l'en-tête">
+                <img src="img/header.jpg" alt="Magnifique en tête (si elle charge pas je suis mal)" loading="eager">
                 <div class="header-text">
                     <h1>Jules VINET LATRILLE</h1>
                     <p>
@@ -67,9 +67,15 @@
         <section class="about-section text-center" id="Profil">
             <div class="presentation de moi">
                 <section class="skills-section" id="Competences">
-                    <h2 class="section-title">Presentation de moi</h2>
+                    <h2 class="section-title">Autoportrait</h2>
                     <hr class="section-divider">
-                    <p> Jsp quoi ecrire mais c est pour une presentation de moi</p>
+                    <p style="font-size: 1.2em;"> Salut, moi c est Jules. Je sais que l en tete ne fait pas tres professionelle mais je le suis.
+                        <br>
+                        Je suis actuellement un etudiant en 2eme annee de BUT Informatique. <br>Je maitrise beaucoup de
+                        langages de programation tels que Python, C++, bash, ou encore des langages web tels que le
+                        HTML, CSS, JavaScript, ou encore PHP<br> J ai realise de nombreux projets, personnels comme
+                        professionels, que vous pouvez retrouver dans ma section Portfolio.
+                    </p>
             </div>
             <div class="container">
                 <!-- Bloc Parcours scolaire -->
@@ -135,7 +141,7 @@
                     <div class="skill-item">
                         <span>GraphQl</span>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 55%;"></div>
+                            <div class="skill-level" style="width: 45%;"></div>
                         </div>
                     </div>
                     <div class="skill-item">
@@ -145,11 +151,18 @@
                         </div>
                     </div>
                     <div class="skill-item">
-                        <span>jsp</span>
+                        <span>ExtendScript</span>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 100%;"></div>
+                            <div class="skill-level" style="width: 30%;"></div>
                         </div>
                     </div>
+                    <div class="skill-item">
+                        <span>php</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 55%;"></div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="cv-download">
                     <img src="doc/CV.png" alt="CV de Jules VINET LATRILLE" class="cv-image">
@@ -265,26 +278,26 @@
         <hr class="section-divider">
         <div class="contact-content">
             <form id="contactForm" class="contact-form"></form>
-                <div class="form-group">
-                    <label for="name">Nom:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-button">Envoyer</button>
+            <div class="form-group">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Envoyer</button>
             </form>
             <div id="formResponse" class="form-response"></div>
         </div>
     </section>
 
     <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
             event.preventDefault();
 
             const name = document.getElementById('name').value;
