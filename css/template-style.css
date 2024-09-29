@@ -8,7 +8,7 @@ body {
 /* Import the Kids-Regular font */
 @font-face {
   font-family: 'Kids-Regular';
-  src: url('../font/Novello_Red_Normal.ttf') format('truetype');
+  src: url('../font/Butler.woff') format('truetype');
 }
 
 /* Apply the Kids-Regular font to all elements */
