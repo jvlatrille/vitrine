@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jules VINET LATRILLE</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-Dessin.css">
     <link rel="stylesheet" href="css/responsee.css">
-    <link rel="stylesheet" href="css/template-style.css">
+    <link rel="stylesheet" href="css/template-style-Dessin.css">
     <link rel="icon" href="img/logo_noir.png" type="image/png">
 
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
@@ -15,12 +15,13 @@
 
 <body class="size-1140">
     <!-- HEADER -->
-    <header role="banner" class="position-absolute">
+    <header role="banner" class="position-absolute"
+        style="background-image: url('img/background.jpg'); background-size: cover; background-position: center;">
         <!-- Logo barre de navigation -->
         <nav class="background-transparent background-transparent-hightlight full-width sticky"
             aria-label="Main Navigation">
             <div class="s-12 l-2">
-                <a href="indexDessin.html" class="site-logo" id="LogoSoulEater" aria-label="Homepage">
+                <a href="index.html" class="site-logo" id="LogoSoulEater" aria-label="Homepage">
                     <!-- Logo Version Blanche -->
                     <img class="logo-white" src="img/logo_noir.png" alt="Soul Eater Logo White Version" sizes="10x10">
                     <!-- Logo Version Noire -->
@@ -32,12 +33,14 @@
                         document.body.style.transition = 'opacity 0.5s, background-color 0.5s';
                         document.body.style.backgroundColor = 'black';
                         document.body.style.opacity = 0;
+
                         setTimeout(function () {
-                            window.location.href = 'indexDessin.html';
+                            window.location.href = 'index.html';
                         }, 500);
                     });
                 </script>
             </div>
+
             <!-- Texte barre de navigation -->
             <div class="top-nav s-12 l-10">
                 <ul class="right chevron">
@@ -57,7 +60,7 @@
         <!-- Main Header -->
         <header class="main-header" id="Accueil">
             <div class="header-content text-center">
-                <img src="img/fond_header.jpg" alt="Magnifique en-tête (si elle ne charge pas, je suis mal)"
+                <img src="img/header2k.jpeg" alt="Magnifique en-tête (si elle ne charge pas, je suis mal)"
                     loading="eager">
                 <div class="header-text">
                     <h1>Jules VINET LATRILLE</h1>
