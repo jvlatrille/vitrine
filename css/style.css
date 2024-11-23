@@ -1,4 +1,22 @@
 /* ---------------------------------- */
+/*        ANIMATIONS GENERALES        */
+/* ---------------------------------- */
+/* Animation par défaut (invisible au départ) */
+.section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Animation visible */
+.section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* ---------------------------------- */
 /*        BARRE DE NAVIGATION         */
 /* ---------------------------------- */
 
@@ -549,8 +567,8 @@ nav.background-transparent {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%; /* Prend toute la largeur */
+    margin: 0; /* Supprime les marges */
 }
 
 .footer-content {
